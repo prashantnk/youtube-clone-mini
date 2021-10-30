@@ -9,12 +9,12 @@ class SearchBar extends React.Component {
     componentDidMount() {
         this.formRef.current.addEventListener('submit', (e) => {
             e.preventDefault();
-            console.log("submitted!");
+            this.props.onFormSubmit(this.state.data);
         })
     }
     render() {
         return (
-            <div className="ui segment" style={{ margin: "20px" }}>
+            <div className="ui segment" style={{ marginTop: "20px" }}>
                 <form className="ui form" ref={this.formRef}>
                     <div className="field">
                         <label htmlFor="inputBar">Youtube Search : </label>
