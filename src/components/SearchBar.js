@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
             <div className="ui segment" style={{ marginTop: "20px" }}>
                 <form className="ui form" ref={this.formRef}>
                     <div className="field">
-                        <label htmlFor="inputBar">Youtube Search : </label>
+                        <label htmlFor="inputBar">Youtube Search Bar: </label>
                         <div className="ui icon input">
                             <input type="text" className="ui input" id="inputBar"
                                 onChange={(e) => this.setState({ data: e.target.value })}
